@@ -10,7 +10,7 @@ export default function Projects() {
           imgSrc={'/projectThumbnails/josmith.png'}
           imgAlt={'link to josmith'}
           description={'Website was created for a college project'}
-          githubLink={'https://github.com/Danny-al/Josmith'}
+          githubLink={'https://github.com/danyaldev/Josmith'}
           websiteLink={'https://sparkly-tanuki-60d118.netlify.app/index.html'}
           accentColor={'bg-cyan-600'}
         />
@@ -20,7 +20,7 @@ export default function Projects() {
           description={
             'A platform for producers to share their melodies (BETA)'
           }
-          githubLink={'https://github.com/Danny-al/MysteryMelody'}
+          githubLink={'https://github.com/danyaldev/MysteryMelody'}
           websiteLink={'https://mysterymelody.com'}
           accentColor={'bg-orange-400'}
         />
@@ -31,7 +31,7 @@ export default function Projects() {
           description={
             'website was created in college for the teamworking module'
           }
-          githubLink={'https://github.com/Danny-al/357ltd'}
+          githubLink={'https://github.com/danyaldev/357ltd'}
           websiteLink={'https://creative-marzipan-3c6a67.netlify.app/'}
           accentColor={'bg-red-800'}
         />
@@ -40,7 +40,7 @@ export default function Projects() {
           imgSrc={'/projectThumbnails/danyalali.png'}
           imgAlt={'link to danyalali.dev'}
           description={'website to show case my skills'}
-          githubLink={'https://github.com/Danny-al/danyalali.dev'}
+          githubLink={'https://github.com/danyaldev/danyalali.dev'}
           websiteLink={'https://danyalali.dev'}
           accentColor={'bg-indigo-500'}
         />

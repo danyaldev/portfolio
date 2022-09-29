@@ -61,7 +61,6 @@ function Technologies() {
           Technologies<br></br>
           {hoveredIcon}
         </h2>
-
         <Marquee
           className="bg-slate-900 overflow-hidden mt-20 absolute bottom-0"
           speed={150}
@@ -70,13 +69,10 @@ function Technologies() {
           pauseOnHover={true}
         >
           <div className="flex justify-center py-8 gap-8 ml-4">
-            {/* create a div on cursor location */}
-
             {technologies.map((tech) => (
               <div key={tech.id} className="text-4xl flex">
                 <div>
                   {tech.icon}
-
                   {iconTooltip ? (
                     <div className="bg-emerald-500 top-2 absolute text-xs rounded-sm px-2  ">
                       {tech.name}
