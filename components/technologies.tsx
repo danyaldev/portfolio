@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRef } from 'react';
 import Marquee from 'react-fast-marquee';
 
 import {
@@ -22,7 +21,7 @@ import {
 
 function Technologies() {
   const [iconTooltip, setIconTooltip] = React.useState(false);
-  const [hoveredIcon, setHoveredIcon] = React.useState('');
+  const [hoveredIcon, setHoveredIcon] = React.useState('Technologies');
 
   // technologies type
 
@@ -56,29 +55,33 @@ function Technologies() {
 
   return (
     <>
-      <div className="h-24  mt-10">
-        <h2 className="text-center text-3xl text-emerald-500 font-bold  ">
-          Technologies<br></br>
+      <div className="h-12">
+        <div className="flex justify-center  py-10 ">
+        <h2 className="text-center bg-gray-900 text-3xl py-4 px-4 text-emerald-500 font-bold rounded-xl overflow-hidden  ">
           {hoveredIcon}
         </h2>
+
+        </div>
         <Marquee
-          className="bg-slate-900 overflow-hidden mt-20 absolute bottom-0"
+          className="bg-slate-900 overflow-hidden  absolute bottom-0"
           speed={150}
           gradientColor={[15, 23, 42]}
           gradient={true}
           pauseOnHover={true}
         >
-          <div className="flex justify-center py-8 gap-8 ml-4">
+          <div className="flex justify-center py-4 gap-8 ml-4">
             {technologies.map((tech) => (
-              <div key={tech.id} className="text-4xl flex">
-                <div>
-                  {tech.icon}
-                  {iconTooltip ? (
-                    <div className="bg-emerald-500 top-2 absolute text-xs rounded-sm px-2  ">
-                      {tech.name}
-                    </div>
-                  ) : null}
-                </div>
+              <div
+                onMouseEnter={() => {
+                  setHoveredIcon(tech.name);
+                }}
+                onMouseLeave={() => {
+                  setHoveredIcon('Technologies');
+                }}
+                key={tech.id}
+                className="text-4xl flex"
+              >
+                <div>{tech.icon}</div>
               </div>
             ))}
           </div>
