@@ -7,7 +7,7 @@ export default function Projects() {
     <>
       <div className="flex flex-wrap justify-center items-center ">
         <Project
-          imgSrc={'/projectThumbnails/josmith.png'}
+          imgSrc={'/projectThumbnails/josmith.webp'}
           imgAlt={'link to josmith'}
           description={'Website was created for a college project'}
           githubLink={'https://github.com/danyaldev/Josmith'}
@@ -15,7 +15,7 @@ export default function Projects() {
           accentColor={'bg-cyan-600'}
         />
         <Project
-          imgSrc={'/projectThumbnails/mysterymelody.png'}
+          imgSrc={'/projectThumbnails/mysterymelody.webp'}
           imgAlt={'link to MysteryMelody'}
           description={
             'A platform for producers to share their melodies (BETA)'
@@ -26,7 +26,7 @@ export default function Projects() {
         />
 
         <Project
-          imgSrc={'/projectThumbnails/357.png'}
+          imgSrc={'/projectThumbnails/357.webp'}
           imgAlt={'link to 357'}
           description={
             'website was created in college for the teamworking module'
@@ -37,7 +37,7 @@ export default function Projects() {
         />
 
         <Project
-          imgSrc={'/projectThumbnails/danyalali.png'}
+          imgSrc={'/projectThumbnails/danyalali.webp'}
           imgAlt={'link to danyalali.dev'}
           description={'website to show case my skills'}
           githubLink={'https://github.com/danyaldev/danyalali.dev'}
