@@ -10,8 +10,8 @@ export default function Projects() {
           imgSrc={'/projectThumbnails/josmith.webp'}
           imgAlt={'link to josmith'}
           description={'Website was created for a college project'}
-          githubLink={'https://github.com/danyaldev/Josmith'}
-          websiteLink={'https://sparkly-tanuki-60d118.netlify.app/index.html'}
+          githubLink={'https://github.com/danyaldev/JSPhotography'}
+          websiteLink={'https://candid-pothos-2bc2d1.netlify.app/'}
           accentColor={'bg-cyan-600'}
         />
         <Project
