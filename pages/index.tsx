@@ -1,9 +1,7 @@
 import type { NextPage } from 'next';
 import Aboutme from '../components/aboutme';
-import Marquee from 'react-fast-marquee';
 
-import { forwardRef, useRef } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { useRef } from 'react';
 
 import Projects from '../components/projects';
 import Technologies from '../components/technologies';
@@ -15,14 +13,12 @@ const Home: NextPage = () => {
   const scrollToAboutMe = () => aboutMeRef.current!.scrollIntoView();
   const scrollToProjects = () => projectsRef.current!.scrollIntoView();
 
-  const { scrollYProgress } = useScroll();
-
   return (
     <>
       <div>
         <div className="flex flex-col justify-center items-center h-[90vh] md:h-screen  text-center ">
           <h2 className="text-6xl md:text-8xl mb-10">Danyal Ali</h2>
-          <h3 className="text-4xl">Full Stack Web Developer</h3>
+          <h3 className="text-4xl">Front-End Web Developer</h3>
           <div className="flex flex-col md:flex-row gap-y-2 md:gap-y-0 gap-x-16 px-4 my-8">
             <button
               onClick={scrollToAboutMe}
